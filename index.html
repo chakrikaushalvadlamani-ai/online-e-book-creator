@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">YOUR STORY STARTS HERE</span>
+    <h1>Turn your ideas into an <em>e-book.</em></h1>
+    <p>Write, shape and publish your thoughts in one simple workspace. Create your first book and export it as a PDF whenever you're ready.</p>
+    <div class="hero-actions"><a class="btn" href="{{ url_for('register') }}">Create your free account</a><a class="text-link" href="{{ url_for('login') }}">I already have an account →</a></div>
+    <div class="hero-stats"><div><strong>01</strong><span>Write</span></div><div><strong>02</strong><span>Preview</span></div><div><strong>03</strong><span>Export PDF</span></div></div>
+  </div>
+  <div class="book-art"><div class="book-shadow"></div><div class="book-cover"><span class="cover-small">A PAGE TURNER</span><div class="cover-line"></div><h2>Your next<br>great story</h2><p>THE BEGINNING IS YOURS</p><span class="cover-number">01</span></div><div class="floating-note">✦ &nbsp; Made by you</div></div>
+</section>
+<section class="feature-row"><div><span>✎</span><h3>A calm writing space</h3><p>Focus on your words without distractions.</p></div><div><span>▤</span><h3>Your own library</h3><p>Keep every draft organised in one place.</p></div><div><span>↗</span><h3>PDF in a click</h3><p>Take your finished e-book with you.</p></div></section>
+{% endblock %}
